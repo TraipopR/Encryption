@@ -36,6 +36,7 @@ namespace Encryption
             }
 
             txtCipherText.Text = Cipher(plainText, _key);
+            txtCipherText1.Text = txtCipherText.Text;
         }
 
         private string Cipher(string plainText, int key)

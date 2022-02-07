@@ -29,6 +29,7 @@ namespace Encryption
             }
 
             txtCipherText.Text = Cipher(plainText);
+            txtCipherText1.Text = txtCipherText.Text;
         }
 
         private void TxtKeyword_Leave(object sender, EventArgs e)

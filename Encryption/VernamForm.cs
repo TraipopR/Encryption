@@ -36,6 +36,8 @@ namespace Encryption
             }
             txtCipherText.Text = Cipher(plainText, key);
             txtKey.Text = key;
+            txtCipherText1.Text = txtCipherText.Text;
+            txtKey1.Text = txtKey.Text;
         }
 
         private void BtnDecrypt_Click(object sender, EventArgs e)

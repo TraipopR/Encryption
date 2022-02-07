@@ -42,6 +42,7 @@ namespace Encryption
                     return val;
                 return Convert.ToString(c);
             }));
+            txtCipherText1.Text = txtCipherText.Text;
         }
 
         private void Dgv_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -61,15 +62,8 @@ namespace Encryption
 
         private void SubstitutionForm_Load(object sender, EventArgs e)
         {
-            //string[] a2z = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-            //Random random = new Random();
-            //a2z.OrderBy(s => (random.Next(2) % 2) == 0).ToArray();
-
-            //dgvA2M.Rows.Add(a2z.Skip(13).Take(13).ToArray());
             dgvA2M.Rows.Add();
             dgvA2M.ClearSelection();
-
-            //dgvN2Z.Rows.Add(a2z.Take(13).ToArray());
             dgvN2Z.Rows.Add();
             dgvN2Z.ClearSelection();
         }

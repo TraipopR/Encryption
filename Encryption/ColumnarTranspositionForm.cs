@@ -71,6 +71,7 @@ namespace Encryption
                 result = result.Insert(i, " ");
             });
             txtCipherText.Text = result;
+            txtCipherText1.Text = txtCipherText.Text;
         }
 
         private void BtnDecrypt_Click(object sender, EventArgs e)
@@ -96,7 +97,7 @@ namespace Encryption
                 .ToArray();
 
             string result = "";
-            for (int i = 0; i < (int)Math.Ceiling((decimal)rmSpace.Length / (decimal)key.Length); i++)
+            for (int i = 0; i < (int)Math.Ceiling((decimal)rmSpace.Length / key.Length); i++)
             {
                 for (int j = 0; j < key.Length; j++)
                 {
